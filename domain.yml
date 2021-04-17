@@ -1,0 +1,170 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- general_info_of_company:
+    use_entities: true
+- company_product_pen:
+    use_entities: true
+- company_product_perfume:
+    use_entities: true
+- company_product_not_pen:
+    use_entities: true
+- company_product_not_perfume:
+    use_entities: true
+- company_product_not_sports:
+    use_entities: true
+- company_product_gel_pen:
+    use_entities: true
+- company_gel_black:
+    use_entities: true
+- company_gel_blue:
+    use_entities: true
+- company_product_ball_pen:
+    use_entities: true
+- company_ball_black:
+    use_entities: true
+- company_ball_blue:
+    use_entities: true
+- company_product_non_gass_perfume:
+    use_entities: true
+- company_non_gass_oriental:
+    use_entities: true
+- company_oriental_purchase:
+    use_entities: true
+- company_non_gass_fruity:
+    use_entities: true
+- company_fruity_purchase:
+    use_entities: true
+- company_product_gass_perfume:
+    use_entities: true
+- company_gass_oceanic:
+    use_entities: true
+- company_oceanic_purchase:
+    use_entities: true
+- company_gass_spicy:
+    use_entities: true
+- company_spicy_purchase:
+    use_entities: true
+- company_product_sports:
+    use_entities: true
+- company_product_indoor_sports:
+    use_entities: true
+- company_indoor_chess:
+    use_entities: true
+- company_chess_purchase:
+    use_entities: true
+- company_indoor_carrom:
+    use_entities: true
+- company_carrom_purchase:
+    use_entities: true
+- company_product_outdoor_sports:
+    use_entities: true
+- company_outdoor_football:
+    use_entities: true
+- company_football_purchase:
+    use_entities: true
+- company_outdoor_cricketkit:
+    use_entities: true
+- company_cricketkit_purchase:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! i am x1 kart chatbot How can i help you?
+  utter_general_info_company:
+  - text: x1 kart is an online product selling website it was formed on jan 12 2021,  it contains products like pen , perfume and sports games etc.
+  utter_company_product_pen:
+  - text: yes we do have pens but what kind of pen do you want ?
+  utter_company_product_gel_pen:
+  - text: yes we have gel pen of blue and black colour , which colour do you want ?
+  utter_blackgel_price:
+  - text: price of blackgel pen is $5 ,so do you want this
+  utter_blackgel_purchase:
+  - text: ok  i will buy you black colour gel pen
+  utter_bluegel_price:
+  - text: price of bluegel pen is $3 ,so do you want this
+  utter_bluegel_purchase:
+  - text: ok  i will buy you blue colour gel pen
+  utter_company_product_ball_pen:
+  - text: yes we have ball pen of blue and black colour , which colour do you want ?
+  utter_blackball_price:
+  - text: price of blackball pen is $2 ,so do you want this
+  utter_blackball_purchase:
+  - text: ok i will buy you  blue colour ball pen
+  utter_blueball_purchase:
+  - text: ok  i will buy you blue colour ball pen
+  utter_blueball_price:
+  - text: price of blue colour ball pen is $1.4
+  utter_company_product_perfume:
+  - text: yes we do have perfume but what kind of perfume do you want ?
+  utter_company_product_non_gass_perfume:
+  - text: yes we have non gass perfume in that we have two variety such as oriental and fruity
+  utter_oriental_price:
+  - text: price of oriental non gass perfume is $15 ,so do you want this
+  utter_oriental_purchase:
+  - text: ok i buy you oriental non gass perfume
+  utter_fruity_price:
+  - text: price of oriental non gass perfume is $18 ,so do you want this
+  utter_fruity_purchase:
+  - text: ok i buy you oriental non gass perfume
+  utter_company_product_gass_perfume:
+  - text: yes we have  gass perfume in that we have two variety such as oceanic and spicy
+  utter_oceanic_price:
+  - text: price of oceanic  gass perfume is $20 ,so do you want this
+  utter_oceanic_purchase:
+  - text: ok i buy you oceanic  gass perfume
+  utter_spicy_price:
+  - text: price of spicy  gass perfume is $30 ,so do you want this
+  utter_spicy_purchase:
+  - text: ok i buy you_spicy  gass perfume
+  utter_company_product_sports:
+  - text: yes we do have sports games but what kind of games do you want ?
+  utter_company_product_indoor_sports:
+  - text: yes we have indoor sports games in that we have two variety such as chess  and carrom
+  utter_chess_price:
+  - text: price of chess games is $120 ,so do you want this
+  utter_chess_purchase:
+  - text: ok i buy you chess games
+  utter_carrom_price:
+  - text: price of carrom games is $150 ,so do you want this
+  utter_carrom_purchase:
+  - text: ok i buy you carrom games
+  utter_company_product_outdoor_sports:
+  - text: yes we have outdoor sports games in that we have two variety such as football and cricket
+  utter_football_price:
+  - text: price of football games is $200 ,so do you want this
+  utter_football_purchase:
+  - text: ok i buy you football games
+  utter_cricketkit_price:
+  - text: price of cricketkit games is $250 ,so do you want this
+  utter_cricketkit_purchase:
+  - text: ok i buy you cricketkit games
+  utter_company_product_not_pen:
+  - text: ok no problem , so would you like to buy another products like perfume or else
+  - text: so would you like to buy another products like perfume or else
+  utter_company_product_not_perfume:
+  - text: ok no problem , so would you like to buy another products like pen or sports game
+  - text: so would you like to buy another products like pen or sports game
+  utter_company_product_not_sports:
+  - text: ok no problem , so would you like to buy another products like pen or perfume
+  - text: so would you like to buy another products like pen or perfume
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+actions: []
+forms: {}
+e2e_actions: []
